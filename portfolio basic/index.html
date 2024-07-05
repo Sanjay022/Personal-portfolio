@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Portfolio</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+<!-- font awesome kit-->
+<script src="https://kit.fontawesome.com/4ea4199550.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation bar -->
+    <div id="header" >
+        <div class="container">
+            <nav >
+                <div class="left">
+                    <img src="images/sb.png" class="logo">
+                </div> 
+                <div class="right">
+                    <ul id="sideMenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#MySkills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+    <!------------------ header text --------------------------------->
+            
+            <div class="header-text">
+                <p>Hello, My Name is</p><br>
+                <h1> <span class="fullName">SANJAY BAKOLIYA</span>
+                    <br> And I am a <span id="element"></span>
+                </h1>
+            </div>
+            <a href="images/resume.pdf" download class="btn2 ">Downoad Resume</a>
+        </div>
+    </div>
+
+    <!-------------- About --------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate web developer with a knack for creating dynamic and user-friendly web applications. With a strong foundation in both front-end and back-end technologies, I strive to bring innovative ideas to life through code.</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br> Web app development</li>
+                            <li><span>Designer</span><br> Web Designer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B tech from RTU Kota</li>
+                            <li><span>2018</span><br>12th form V.N. Sikar, Raj.</li>
+                            <li><span>2016</span><br>10th form T.S.S. Sikar, Raj.<br> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------- Services --------------------- -->
+
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2>Web Design</h2>
+                    <p>As a web designer, I create visually stunning, user-friendly websites that blend aesthetics with functionality.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Development</h2>
+                    <p>I specialize in building dynamic,responsive websites and web applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Team Menegement</h2>
+                    <p>As a team leader,I lead diverse teams to achieve project goals efficiently through collaboration.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- -------------- portfolio----------- -->
+
+    <div id="MySkills">
+        <div class="container">
+            <h1 class="skills-sub-titles">My Skills</h1>
+            <div class="row">
+                <div class="skills-col-1">
+                    <h1 class="skills-sub-title">My creative skills & experiences. </h1>
+                    <p>=> Front-End Development: Proficient in HTML, CSS, JavaScript, and modern frameworks like React and Angular, I build responsive and interactive user interfaces that provide seamless user experiences. <br>
+                    => Back-End Development: Experienced with server-side technologies such as Node.js, Express, and databases like MongoDB and SQL, I develop robust and scalable back-end solutions to support front-end functionalities.</p>
+
+                    <a href="#" class="skills-btn"> Read More</a>
+                    
+                </div>
+                <div class="skills-col-2">
+                    <li>
+                        <h3>HTML</h3>    
+                        <span class="bar"> <span class="html"></span></span>
+                    </li>
+                    <li>
+                        <h3>CSS</h3>    
+                        <span class="bar"> <span class="CSS"></span></span>
+                    </li>
+                    <li>
+                        <h3>JavaScript</h3>    
+                        <span class="bar"> <span class="JavaScript"></span></span>
+                    </li>
+                    <li>
+                        <h3>Node JS</h3>    
+                        <span class="bar"> <span class="NodeJs"></span></span>
+                    </li>
+                    <li>
+                        <h3>MySQL</h3>    
+                        <span class="bar"> <span class="MySQL"></span></span>
+                    </li>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+  
+
+    <!-- -------------- Contact ------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <div class="sub-title">Contact Me</div>
+                    <p><i class="fa-solid fa-paper-plane"></i>sanjaybakoliya17@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9001038075</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sanjay.bakoliya.58/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/its_sanjay_022/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Sanjay022"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sanjay-bakoliya-288821208/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder=" Your message"></textarea>
+                        <button type="submit" class="btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Sanjay | All Rights Reserved | 2024 </p>
+        </div>
+    </div>
+
+<!--  ---------- typescript js -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Designer'],
+      typeSpeed: 50,
+      loop: true,
+    });
+  </script>
+
+  <!-- -------------------------------------- -->
+
+  <script>
+
+    var tablinks = document.getElementsByClassName('tab-links')
+    var tabcontents = document.getElementsByClassName('tab-content')
+    
+    function opentab(tabname){
+        for(tablink of tablinks ){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents  ){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sideMenu")
+    
+    function openMenu(){
+        sidemenu.style.right= "0"
+       }
+
+    function closeMenu(){
+        sidemenu.style.right = "-200px"
+    }
+  </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz1D-94eydRlEtjhVG4FPxwW1BOosU7LLG6sCIxvBfYOG62gJP2fgIUvD-uzK_nEnu_bQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = 'Message sent successfully!'
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset( )
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
